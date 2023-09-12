@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bate-papo</title>
+</head>
+
+<body background="img/fundo-digital-de-codigo-binario-de-estilo-de-matriz-com-numeros-caindo_1017-25336.avif">
+    <div class="container">
+        <div class="batePapo" id="batePapo">
+            <!-- Mensagens serão adicionadas aqui -->
+        </div>
+        <!-- Div separada para o input de enviar mensagem e os botões -->
+        <div class="barraMensagem" id="barraMensagem">
+            <input type="text" id="nomeInput" placeholder="Seu Nome">
+            <input type="text" id="mensagemInput" placeholder="Digite uma mensagem"
+                onkeydown="if (event.key === 'Enter') enviarMensagem()">
+            <button class="botao" id="enviarBotao" onclick="enviarMensagem()">Enviar</button>
+        </div>
+        <!-- Div para os botões -->
+        <div class="botoesMensagem">
+            <button onclick="apagarUltimaMensagem()">Apagar Última Mensagem</button>
+            <button onclick="exibirPromptApagar()">Limpar Chat</button>
+        </div>
+    </div>
+
+
+    <script src="JavaScript.js"></script>
+</body>
+
+</html>
